@@ -1,0 +1,13 @@
+Thick- Will
+consume
+the entire 
+space from
+the datastore
+for example 
+if you 
+provisioned disk
+with 4 GB
+straight away
+gone from
+the datastore
+dedicated for it.
