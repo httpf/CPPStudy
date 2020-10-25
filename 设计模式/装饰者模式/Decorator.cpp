@@ -1,11 +1,21 @@
-#include <iostream>
-#include <string>
-#include "Beverage.h"
+#include "Decorator.h"
 
-using namespace std;
-
-class CondimentDecorator : public Beverage
+Mocha::Mocha(Beverage *p)
 {
-public:
-    virtual string getDescription() = 0;
-};
+    pBeverage = p;
+}
+
+string Mocha::getDescription()
+{
+    return pBeverage->getDescription() + ", Mocha";
+}
+
+double Mocha::cost()
+{
+    return 0.2 + pBeverage->cost();
+}
+
+Mocha::~Mocha()
+{
+    
+}
