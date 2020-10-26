@@ -1,13 +1,8 @@
 #include "Decorator.h"
 
-Mocha::Mocha(Beverage *p)
-{
-    pBeverage = p;
-}
-
 string Mocha::getDescription()
 {
-    return pBeverage->getDescription() + ", Mocha";
+    return pBeverage->getDescription() + ", add Mocha";
 }
 
 double Mocha::cost()

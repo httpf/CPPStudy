@@ -9,16 +9,16 @@ using namespace std;
 class CondimentDecorator : public Beverage
 {
 public:
-    virtual string getDescription() = 0;
+    CondimentDecorator(Beverage *pBev) : pBeverage(pBev) {}
+
+protected:
+    Beverage *pBeverage;
 };
 
 class Mocha : public CondimentDecorator
 {
-protected:
-    Beverage *pBeverage;
-
 public:
-    Mocha(Beverage *p);
+    Mocha(Beverage *p) : CondimentDecorator(p) {};
     string getDescription();
     double cost();
     ~Mocha();
