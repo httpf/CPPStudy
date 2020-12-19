@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "functional": "cpp",
-        "xstddef": "cpp"
+        "xstddef": "cpp",
+        "list": "cpp"
     }
 }
